@@ -1,0 +1,246 @@
+:root {
+  --background-color-main-page: rgb(194, 194, 194);
+  --background-color-main-item: rgb(255, 255, 255);
+  --background-color-main-white: rgb(233, 233, 233);
+  --shadow-color: rgb(88, 88, 88);
+  --header-color: rgb(108, 226, 247);
+  --header-color-dark: rgb(34, 34, 141);
+  --grey-blue: #102a42;
+  --primaryLightColor: #d4e6a5;
+  --primaryColor: #476a2e;
+  --primaryDarkColor: #c02c03;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBackground: #f1f5f8;
+  --mainOverlay: rgba(35, 10, 36, 0.4);
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #afafaf;
+  --mainRed: #bd0303;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.3rem;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  --mainBorderRadius: 0.25rem;
+  --smallWidth: 85vw;
+  --maxWidth: 40rem;
+  --fullWidth: 1170px;
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: hsl(205, 78%, 60%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.75rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Code";
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--background-color-main-white);
+}
+a {
+  text-decoration: none;
+  /* color: black; */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1.25rem;
+  letter-spacing: var(--mainSpacing);
+}
+p {
+  background: linear-gradient(to right, black, var(--header-color-dark));
+  background-clip: text;
+  color: transparent;
+}
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.btn {
+  width: 200px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 18px;
+  color: red;
+  border: 1px solid red;
+  background-color: transparent;
+  transition: all 1s;
+}
+.btn:hover {
+  background-color: var(--hover-color);
+}
+.loading {
+  height: 150px;
+  width: 150px;
+  border: 5px solid rgb(204, 0, 255);
+  border-top-color: rgb(43, 4, 53);
+  transition: all 1s linear;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+
+  animation: rotate 1s infinite;
+  border-radius: 50%;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.flex-direct-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 25px;
+
+  padding-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* text-align: center; */
+  flex-direction: column;
+  width: 90vw;
+  margin: auto;
+  margin-top: 2rem;
+}
+.text-header {
+  color: var(--grey-blue);
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+}
+.Account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 10px 10px 40px var(--lightShadow);
+  height: 230px;
+  /* max-width: 280px; */
+  width: 90vw;
+  background-color: white;
+  margin-top: 20px;
+  transition: all 200ms linear;
+}
+.Account:hover {
+  transform: scale(1.1);
+}
+.Account img {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.Account a {
+  width: 150px;
+  border-radius: 8px;
+  padding: 5px;
+  color: white;
+  text-align:center ;
+  background-color: var(--clr-primary-5);
+}
+.pages-num {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* width: 100%; */
+  height: 50px;
+  max-width: 600px;
+  margin: 20px 0;
+}
+.text-btn {
+  width: 60px;
+  padding: 10px;
+  height: 40px;
+  color: #102a42;
+  font-size: 18px;
+  font-weight: bolder;
+  background-color: transparent;
+}
+.num-btn {
+  width: 50px;
+  height: 40px;
+  background-color: var(--clr-primary-2);
+}
+.active {
+  background-color: var(--clr-primary-1);
+}
+@media screen and (min-width: 700px) {
+  .Account-container {
+    display: grid;
+    width: 90vw;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Account {
+    width: 280px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .Account-container {
+    display: grid;
+    width: 90vw;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1300px) {
+  .Account-container {
+    display: grid;
+    width: 90vw;
+
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
