@@ -5,6 +5,7 @@
 
 ## How We Fetch Users
 
+![Fetching](https://user-images.githubusercontent.com/62702473/231175647-c8d04000-ee35-4b4e-91ac-c6c00325ec1c.PNG)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
