@@ -1,4 +1,11 @@
 # Getting Started with Create React App
+## [App Demo](https://github-repo-i-follow.netlify.app/)
+
+![Project Preview](https://user-images.githubusercontent.com/62702473/231168626-71a5ebec-46ea-40fe-926c-61310d03855e.gif)
+
+## How We Fetch Users
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
